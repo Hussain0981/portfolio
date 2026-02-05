@@ -1,5 +1,5 @@
 <template>
-  <section class="py-14 px-6 bg-primary text-white overflow-hidden">
+  <section id="experience" class="py-14 px-6 bg-primary text-white overflow-hidden">
     <div class="max-w-7xl mx-auto">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
         <div class="space-y-4">
@@ -27,7 +27,7 @@
           <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white/20 bg-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-colors group-hover:border-color/50">
             <div class="w-3 h-3 bg-color rounded-full animate-pulse" />
           </div>
-          <div class="w-[calc(100%-4rem)] md:w-[45%] p-8 rounded-[40px] border border-white/10 bg-white/[0.02] backdrop-blur-xl hover:border-color/30 transition-all duration-500">
+          <div class="w-[calc(100%-4rem)] md:w-[45%] p-8 rounded-[40px] border border-white/10 bg-white/2 backdrop-blur-xl hover:border-color/30 transition-all duration-500">
             <time class="font-mono text-[10px] text-color uppercase tracking-[0.3em]">Dec 2025 — Present</time>
             <h3 class="text-2xl md:text-3xl font-bold text-white mt-2 uppercase tracking-tight">
               Full Stack Freelancer
@@ -42,7 +42,7 @@
           <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white/20 bg-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
             <div class="w-2 h-2 bg-white/30 rounded-full group-hover:bg-white transition-colors" />
           </div>
-          <div class="w-[calc(100%-4rem)] md:w-[45%] p-8 rounded-[40px] border border-white/5 bg-white/[0.01] hover:border-white/20 transition-all duration-500">
+          <div class="w-[calc(100%-4rem)] md:w-[45%] p-8 rounded-[40px] border border-white/5 bg-white/1 hover:border-white/20 transition-all duration-500">
             <time class="font-mono text-[10px] text-white/30 uppercase tracking-[0.3em]">May 2024 — Dec 2025</time>
             <h3 class="text-2xl md:text-3xl font-bold text-white mt-2 uppercase tracking-tight">
               Full Stack Developer
@@ -60,7 +60,7 @@
           <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white/20 bg-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
             <div class="w-2 h-2 bg-white/20 rounded-full" />
           </div>
-          <div class="w-[calc(100%-4rem)] md:w-[45%] p-8 rounded-[40px] border border-white/5 bg-white/[0.01] hover:border-white/20 transition-all duration-500">
+          <div class="w-[calc(100%-4rem)] md:w-[45%] p-8 rounded-[40px] border border-white/5 bg-white/1 hover:border-white/20 transition-all duration-500">
             <time class="font-mono text-[10px] text-white/20 uppercase tracking-[0.3em]">Feb 2024 — May 2024</time>
             <h3 class="text-2xl md:text-3xl font-bold text-white mt-2 uppercase tracking-tight">
               Full Stack Intern

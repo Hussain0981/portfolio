@@ -26,7 +26,7 @@ const projects = [
 </script>
 
 <template>
-  <section class="py-10 px-6 bg-primary">
+  <section id="feature-project" class="py-10 px-6 bg-primary">
     <div class="max-w-7xl mx-auto space-y-32">
       <div>
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">

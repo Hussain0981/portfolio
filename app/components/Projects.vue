@@ -33,7 +33,7 @@ const projects = ref<projects[]>([
 </script>
 
 <template>
-  <main class="bg-primary min-h-screen text-white py-10 px-6 lg:px-12 overflow-hidden">
+  <section id="projects" class="bg-primary min-h-screen text-white py-10 px-6 lg:px-12 overflow-hidden">
     <div
       class="fixed top-20 right-[-5%] text-[20vw] font-black text-white/[0.02] uppercase pointer-events-none select-none z-0">
       Archives
@@ -134,12 +134,12 @@ const projects = ref<projects[]>([
         </button>
       </div>
     </div>
-  </main>
+  </section>
 </template>
 
 <style scoped>
 /* Kinetic typography smoothing */
-main {
+section {
   -webkit-font-smoothing: antialiased;
 }
 
