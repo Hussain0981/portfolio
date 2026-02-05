@@ -1,5 +1,5 @@
 <template>
-  <section id="hero-section" class="relative min-h-screen bg-primary flex items-center justify-center overflow-hidden font-sans">
+  <section id="home" class="relative min-h-screen bg-primary flex items-center justify-center overflow-hidden font-sans">
     <div
       class="absolute inset-0 z-0 opacity-20"
       style="background-image: linear-gradient(#ffffff05 1px, transparent 1px), linear-gradient(90deg, #ffffff05 1px, transparent 1px); background-size: 50px 50px;"

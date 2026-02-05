@@ -1,15 +1,23 @@
-export function useSmoothScroll() {
-  const { $gsap: gsap } = useNuxtApp()
+export const useSmoothScroll = () => {
+  const { $gsap } = useNuxtApp()
 
   const scrollToSection = (id: string) => {
-    gsap.to(window, {
+    const el = document.getElementById(id)
+    if (!el) return
+
+    const headerOffset = 105 // 
+
+    const y =
+      el.getBoundingClientRect().top +
+      window.pageYOffset -
+      headerOffset
+
+    $gsap.to(window, {
       duration: 1,
-      scrollTo: `#${id}`,
-      ease: 'power2.out'
+      scrollTo: y,
+      ease: 'power3.out'
     })
   }
 
-  return {
-    scrollToSection
-  }
+  return { scrollToSection }
 }

@@ -5,3 +5,19 @@
   --color-secondary: #1D293D;
   --color-color: #00DC82;
 }
+
+section {
+  scroll-margin-top: 90px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00DC82;
+  border-radius: 999px;
+}

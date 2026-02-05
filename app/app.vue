@@ -5,21 +5,3 @@
     <NuxtPage />
   </div>
 </template>
-
-<style lang="css">
-section {
-  scroll-margin-top: 90px;
-}
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #030712;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #00DC82;
-  border-radius: 999px;
-}
-</style>
