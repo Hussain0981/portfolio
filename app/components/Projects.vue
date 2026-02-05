@@ -1,8 +1,7 @@
 <script setup lang="ts">
-/**
-  Projects derived from your professional background
- */
-const projects = [
+import type { projects } from '~~/types/projects'
+
+const projects = ref<projects[]>([
   {
     title: 'Enterprise SaaS Architecture',
     category: 'Full Stack / NGEN',
@@ -30,12 +29,13 @@ const projects = [
     description: 'Designed a secure, multi-tenant backend infrastructure with complex schema relationships and automated security auditing.',
     image: '/backend-project.jpg',
   },
-]
+]);
 </script>
 
 <template>
   <main class="bg-primary min-h-screen text-white py-10 px-6 lg:px-12 overflow-hidden">
-    <div class="fixed top-20 right-[-5%] text-[20vw] font-black text-white/[0.02] uppercase pointer-events-none select-none z-0">
+    <div
+      class="fixed top-20 right-[-5%] text-[20vw] font-black text-white/[0.02] uppercase pointer-events-none select-none z-0">
       Archives
     </div>
 
@@ -52,14 +52,17 @@ const projects = [
         </div>
         <div class="max-w-xs text-right hidden md:block">
           <p class="text-white/40 text-xs font-mono leading-loose uppercase tracking-widest">
-            Focused on the intersection of <span class="text-white">technical stability</span> and <span class="text-white">visual elegance</span>.
+            Focused on the intersection of <span class="text-white">technical stability</span> and <span
+              class="text-white">visual elegance</span>.
           </p>
         </div>
       </div>
 
       <div class="space-y-32">
-        <div v-for="(project, index) in projects" :key="index" class="group flex flex-col lg:flex-row gap-12 items-start">
-          <div class="w-full lg:w-1/4 space-y-8 order-2 lg:order-1 border-l border-white/10 pl-8 group-hover:border-color transition-colors duration-500">
+        <div v-for="(project, index) in projects" :key="index"
+          class="group flex flex-col lg:flex-row gap-12 items-start">
+          <div
+            class="w-full lg:w-1/4 space-y-8 order-2 lg:order-1 border-l border-white/10 pl-8 group-hover:border-color transition-colors duration-500">
             <div>
               <p class="text-[10px] font-mono text-white/30 uppercase mb-1">
                 Project Code
@@ -74,7 +77,8 @@ const projects = [
                 Primary Stack
               </p>
               <div class="flex flex-wrap gap-2">
-                <span v-for="t in project.tech" :key="t" class="px-2 py-1 rounded bg-white/5 border border-white/10 text-[10px] font-mono text-white/60">
+                <span v-for="t in project.tech" :key="t"
+                  class="px-2 py-1 rounded bg-white/5 border border-white/10 text-[10px] font-mono text-white/60">
                   {{ t }}
                 </span>
               </div>
@@ -89,27 +93,29 @@ const projects = [
               </p>
             </div>
 
-            <NuxtLink :to="project.link" class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em] text-color group/btn pt-4">
+            <NuxtLink :to="project.link"
+              class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em] text-color group/btn pt-4">
               Explore Case Study
               <Icon name="lucide:arrow-right" class="group-hover/btn:translate-x-2 transition-transform" />
             </NuxtLink>
           </div>
 
           <div class="w-full lg:w-3/4 order-1 lg:order-2 group/image overflow-hidden rounded-3xl relative">
-            <div class="absolute inset-0 bg-color/20 mix-blend-color opacity-0 group-hover/image:opacity-100 transition-opacity duration-700 z-10" />
+            <div
+              class="absolute inset-0 bg-color/20 mix-blend-color opacity-0 group-hover/image:opacity-100 transition-opacity duration-700 z-10" />
 
             <div class="aspect-video bg-white/5 relative overflow-hidden">
-              <img
-                :src="project.image"
+              <img :src="project.image"
                 class="w-full h-full object-cover filter grayscale group-hover/image:grayscale-0 group-hover/image:scale-105 transition-all duration-1000 ease-out"
-                alt=""
-              >
+                alt="">
 
-              <div class="absolute inset-0 p-12 flex flex-col justify-end bg-gradient-to-t from-[#030712] via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity">
+              <div
+                class="absolute inset-0 p-12 flex flex-col justify-end bg-linear-to-t from-primary via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity">
                 <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-tighter text-white mb-4">
                   {{ project.title }}
                 </h2>
-                <p class="max-w-md text-white/60 text-sm leading-relaxed translate-y-4 group-hover/image:translate-y-0 transition-transform duration-500">
+                <p
+                  class="max-w-md text-white/60 text-sm leading-relaxed translate-y-4 group-hover/image:translate-y-0 transition-transform duration-500">
                   {{ project.description }}
                 </p>
               </div>
@@ -122,7 +128,8 @@ const projects = [
         <h3 class="text-4xl font-black uppercase mb-8">
           Ready to Build Something <span class="text-color">Iconic?</span>
         </h3>
-        <button class="px-12 py-5 bg-white text-black font-black uppercase text-xs tracking-[0.3em] rounded-full hover:bg-color transition-all duration-300">
+        <button
+          class="px-12 py-5 bg-white text-black font-black uppercase text-xs tracking-[0.3em] rounded-full hover:bg-color transition-all duration-300">
           Start a Consultation
         </button>
       </div>
@@ -138,7 +145,7 @@ main {
 
 /* Subtle mask for the "Works" title to feel more modern */
 h1 {
-  background: linear-gradient(to bottom, #fff 50%, rgba(255,255,255,0.2) 100%);
+  background: linear-gradient(to bottom, #fff 50%, rgba(255, 255, 255, 0.2) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
