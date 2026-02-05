@@ -22,13 +22,15 @@
   "dependencies": {
     "@nuxt/content": "^3.11.0",
     "@nuxt/eslint": "1.13.0",
+    "@nuxt/icon": "2.2.1",
+    "@nuxt/image": "2.0.0",
     "better-sqlite3": "^12.6.2",
     "nuxt": "^4.3.0"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "tailwindcss": "^4.1.18",
     "@antfu/eslint-config": "^7.2.0",
-    "eslint": "^9.39.2"
+    "@tailwindcss/vite": "^4.1.18",
+    "eslint": "^9.39.2",
+    "tailwindcss": "^4.1.18"
   }
 }
