@@ -1,5 +1,5 @@
 <template>
-  <section class="py-32 px-6 bg-primary text-white overflow-hidden">
+  <section class="py-14 px-6 bg-primary text-white overflow-hidden">
     <div class="max-w-7xl mx-auto">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-24 gap-8">
         <div class="space-y-4">
@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <div class="space-y-12 relative before:absolute before:inset-0 before:ml-5 md:before:mx-auto before:h-full before:w-px before:bg-linear-to-b before:from-transparent before:via-white/20 before:to-transparent">
+      <div class="space-y-12 relative before:absolute before:inset-0 before:ml-5 md:before:mx-auto before:h-full before:w-px before:bg-gradient-to-b before:from-transparent before:via-white/20 before:to-transparent">
         <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
           <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white/20 bg-primary shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 transition-colors group-hover:border-color/50">
             <div class="w-3 h-3 bg-color rounded-full animate-pulse" />

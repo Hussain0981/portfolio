@@ -26,14 +26,14 @@ const projects = [
 </script>
 
 <template>
-  <section class="py-32 px-6 bg-[#030712]">
+  <section class="py-10 px-6 bg-primary">
     <div class="max-w-7xl mx-auto space-y-32">
       <div>
         <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div class="space-y-4">
             <div class="flex items-center gap-2">
-              <div class="w-8 h-[1px] bg-myColor" />
-              <span class="text-myColor font-mono text-xs uppercase tracking-[0.3em]">Selected Work</span>
+              <div class="w-8 h-[1px] bg-color" />
+              <span class="text-color font-mono text-xs uppercase tracking-[0.3em]">Selected Work</span>
             </div>
             <h2 class="text-5xl md:text-7xl font-black text-white uppercase leading-none">
               Featured <br> <span class="text-transparent" style="-webkit-text-stroke: 1px rgba(255,255,255,0.3);">Projects</span>
@@ -52,7 +52,7 @@ const projects = [
 
             <div class="absolute inset-0 p-8 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
               <div class="flex flex-wrap gap-2 mb-4">
-                <span v-for="t in project.tech" :key="t" class="px-2 py-1 rounded bg-white/5 border border-white/10 text-[10px] text-myColor font-mono">{{ t }}</span>
+                <span v-for="t in project.tech" :key="t" class="px-2 py-1 rounded bg-white/5 border border-white/10 text-[10px] text-color font-mono">{{ t }}</span>
               </div>
               <h3 class="text-2xl font-bold text-white uppercase italic tracking-tight mb-2">
                 {{ project.title }}
@@ -60,7 +60,7 @@ const projects = [
               <p class="text-white/50 text-sm line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                 {{ project.desc }}
               </p>
-              <a :href="project.link" class="mt-6 w-12 h-12 rounded-full bg-myColor text-black flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-500 delay-200">
+              <a :href="project.link" class="mt-6 w-12 h-12 rounded-full bg-color text-black flex items-center justify-center scale-0 group-hover:scale-100 transition-transform duration-500 delay-200">
                 <Icon name="lucide:external-link" class="w-5 h-5" />
               </a>
             </div>

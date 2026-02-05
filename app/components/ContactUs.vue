@@ -1,5 +1,5 @@
 <template>
-  <section class="py-40 bg-primary text-white selection:bg-color selection:text-black">
+  <section class="py-14 bg-primary text-white selection:bg-color selection:text-black">
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex items-center gap-4 mb-20 opacity-30">
         <div class="h-px w-12 bg-white" />

@@ -52,7 +52,7 @@
               alt="Hussain Ullah"
               class="w-full h-full object-cover object-top contrast-[1.1] brightness-[0.9] group-hover:scale-110 group-hover:brightness-100 transition-all duration-1000 ease-out"
             >
-            <div class="absolute inset-0 bg-linear-to-t from-[#030712] via-transparent to-transparent opacity-60" />
+            <div class="absolute inset-0 bg-linear-to-t from-primary via-transparent to-transparent opacity-60" />
           </div>
 
           <div class="absolute top-10 -right-10 md:-right-20 p-4 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl animate-float">

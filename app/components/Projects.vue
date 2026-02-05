@@ -34,7 +34,7 @@ const projects = [
 </script>
 
 <template>
-  <main class="bg-primary min-h-screen text-white pt-32 pb-24 px-6 lg:px-12 overflow-hidden">
+  <main class="bg-primary min-h-screen text-white py-10 px-6 lg:px-12 overflow-hidden">
     <div class="fixed top-20 right-[-5%] text-[20vw] font-black text-white/[0.02] uppercase pointer-events-none select-none z-0">
       Archives
     </div>
@@ -43,11 +43,11 @@ const projects = [
       <div class="mb-24 flex flex-col md:flex-row justify-between items-end gap-8 border-b border-white/10 pb-12">
         <div class="space-y-4">
           <div class="flex items-center gap-3">
-            <span class="w-2 h-2 rounded-full bg-myColor animate-pulse" />
-            <span class="text-myColor font-mono text-[10px] uppercase tracking-[0.4em]">Index / 003 Projects</span>
+            <span class="w-2 h-2 rounded-full bg-color animate-pulse" />
+            <span class="text-color font-mono text-[10px] uppercase tracking-[0.4em]">Index / 003 Projects</span>
           </div>
           <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tighter italic">
-            Works<span class="text-myColor">.</span>
+            Works<span class="text-color">.</span>
           </h1>
         </div>
         <div class="max-w-xs text-right hidden md:block">
@@ -59,7 +59,7 @@ const projects = [
 
       <div class="space-y-32">
         <div v-for="(project, index) in projects" :key="index" class="group flex flex-col lg:flex-row gap-12 items-start">
-          <div class="w-full lg:w-1/4 space-y-8 order-2 lg:order-1 border-l border-white/10 pl-8 group-hover:border-myColor transition-colors duration-500">
+          <div class="w-full lg:w-1/4 space-y-8 order-2 lg:order-1 border-l border-white/10 pl-8 group-hover:border-color transition-colors duration-500">
             <div>
               <p class="text-[10px] font-mono text-white/30 uppercase mb-1">
                 Project Code
@@ -89,14 +89,14 @@ const projects = [
               </p>
             </div>
 
-            <NuxtLink :to="project.link" class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em] text-myColor group/btn pt-4">
+            <NuxtLink :to="project.link" class="inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em] text-color group/btn pt-4">
               Explore Case Study
               <Icon name="lucide:arrow-right" class="group-hover/btn:translate-x-2 transition-transform" />
             </NuxtLink>
           </div>
 
           <div class="w-full lg:w-3/4 order-1 lg:order-2 group/image overflow-hidden rounded-3xl relative">
-            <div class="absolute inset-0 bg-myColor/20 mix-blend-color opacity-0 group-hover/image:opacity-100 transition-opacity duration-700 z-10" />
+            <div class="absolute inset-0 bg-color/20 mix-blend-color opacity-0 group-hover/image:opacity-100 transition-opacity duration-700 z-10" />
 
             <div class="aspect-video bg-white/5 relative overflow-hidden">
               <img
@@ -118,11 +118,11 @@ const projects = [
         </div>
       </div>
 
-      <div class="mt-40 text-center border-t border-white/10 pt-20">
+      <div class="mt-14 text-center border-t border-white/10 pt-20">
         <h3 class="text-4xl font-black uppercase mb-8">
-          Ready to Build Something <span class="text-myColor">Iconic?</span>
+          Ready to Build Something <span class="text-color">Iconic?</span>
         </h3>
-        <button class="px-12 py-5 bg-white text-black font-black uppercase text-xs tracking-[0.3em] rounded-full hover:bg-myColor transition-all duration-300">
+        <button class="px-12 py-5 bg-white text-black font-black uppercase text-xs tracking-[0.3em] rounded-full hover:bg-color transition-all duration-300">
           Start a Consultation
         </button>
       </div>

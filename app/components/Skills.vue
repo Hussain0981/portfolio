@@ -18,7 +18,7 @@ const backendSkills = [
 </script>
 
 <template>
-  <section class="py-24 px-6 bg-primary text-white">
+  <section class="py-10 px-6 bg-primary text-white">
     <div class="max-w-7xl mx-auto">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <div>
