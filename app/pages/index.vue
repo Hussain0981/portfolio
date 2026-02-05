@@ -1,6 +1,6 @@
 <script setup>
 const data = await queryCollection('home/hero').first()
-</script>
+</script>   
 
 <template>
   <section>
