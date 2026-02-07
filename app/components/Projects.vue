@@ -1,6 +1,8 @@
 <script setup lang="ts">
+import { useSmoothScroll } from '~/composables/useScroll'
 import type { projects } from '~~/types/projects'
 
+const { scrollToSection } = useSmoothScroll()
 const projects = ref<projects[]>([
   {
     title: 'Enterprise SaaS Architecture',
@@ -33,21 +35,21 @@ const projects = ref<projects[]>([
 </script>
 
 <template>
-  <section id="projects" class="bg-primary min-h-screen text-white py-10 px-6 lg:px-12 overflow-hidden">
+  <section id="projects" class="bg-primary min-h-screen text-white py-10 px-3 md:px-6 lg:px-12 overflow-hidden">
     <div
       class="fixed top-20 right-[-5%] text-[20vw] font-black text-white/[0.02] uppercase pointer-events-none select-none z-0">
       Archives
     </div>
 
     <div class="max-w-7xl mx-auto relative z-10">
-      <div class="mb-24 flex flex-col md:flex-row justify-between items-end gap-8 border-b border-white/10 pb-12">
+      <div class="mb-12 md:mb-24 flex flex-col md:flex-row justify-between items-start gap-5 md:gap-8 border-b border-white/10 pb-2 md:pb-12">
         <div class="space-y-4">
           <div class="flex items-center gap-3">
             <span class="w-2 h-2 rounded-full bg-color animate-pulse" />
             <span class="text-color font-mono text-[10px] uppercase tracking-[0.4em]">Index / 003 Projects</span>
           </div>
-          <h1 class="text-6xl md:text-9xl font-black uppercase tracking-tighter italic">
-            Works<span class="text-color">.</span>
+          <h1 class="text-6xl md:text-9xl font-black uppercase md:tracking-tighter italic">
+            Projects<span class="text-color">.</span>
           </h1>
         </div>
         <div class="max-w-xs text-right hidden md:block">
@@ -58,11 +60,11 @@ const projects = ref<projects[]>([
         </div>
       </div>
 
-      <div class="space-y-32">
+      <div class="space-y-16 md:space-y-32">
         <div v-for="(project, index) in projects" :key="index"
-          class="group flex flex-col lg:flex-row gap-12 items-start">
+          class="group flex flex-col lg:flex-row gap-8 md:gap-12 items-start">
           <div
-            class="w-full lg:w-1/4 space-y-8 order-2 lg:order-1 border-l border-white/10 pl-8 group-hover:border-color transition-colors duration-500">
+            class="w-full lg:w-1/4 space-y-4 md:space-y-8 order-2 lg:order-1 border-l border-white/10 pl-4 md:pl-8 group-hover:border-color transition-colors duration-500">
             <div>
               <p class="text-[10px] font-mono text-white/30 uppercase mb-1">
                 Project Code
@@ -124,11 +126,11 @@ const projects = ref<projects[]>([
         </div>
       </div>
 
-      <div class="mt-14 text-center border-t border-white/10 pt-20">
+      <div class="mt-14 text-center border-t border-white/10 pt-10 md:pt-20">
         <h3 class="text-4xl font-black uppercase mb-8">
           Ready to Build Something <span class="text-color">Iconic?</span>
         </h3>
-        <button
+        <button @click="scrollToSection('contact')"
           class="px-12 py-5 bg-white text-black font-black uppercase text-xs tracking-[0.3em] rounded-full hover:bg-color transition-all duration-300">
           Start a Consultation
         </button>

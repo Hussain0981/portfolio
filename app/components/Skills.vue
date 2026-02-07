@@ -18,9 +18,9 @@ const backendSkills = [
 </script>
 
 <template>
-  <section id="skills" class="py-10 px-6 bg-primary text-white">
+  <section id="skills" class="md:py-10 px-3 md:px-6 bg-primary text-white">
     <div class="max-w-7xl mx-auto">
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-16 gap-6">
         <div>
           <div class="flex items-center gap-2 mb-4">
             <span class="relative flex h-3 w-3">
@@ -38,15 +38,15 @@ const backendSkills = [
         </p>
       </div>
 
-      <div class="grid lg:grid-cols-2 gap-px bg-white/10 border border-white/10 rounded-3xl overflow-hidden">
-        <div class=" p-8 md:p-12 relative group">
+      <div class="grid lg:grid-cols-2 gap-px bg-white/10 border border-white/10 rounded-xl md:rounded-3xl overflow-hidden">
+        <div class="px-2 py-5 md:p-8 md:p-12 relative group">
           <div class="mb-12">
             <span class="text-color font-mono tracking-[0.3em] uppercase text-xs">Side A</span>
-            <h3 class="text-5xl font-black text-white mt-2 italic tracking-tighter uppercase">
+            <h3 class="text-3xl font-semibold md:text-5xl font-black text-white mt-2 md:italic md:tracking-tighter uppercase">
               Frontend
             </h3>
             <p class="text-white/40 mt-4 max-w-sm text-sm">
-              Crafting immersive interfaces with Vue.js, GSAP, and Nuxt 4[cite: 38, 40].
+              Crafting immersive interfaces with <br>Vue.js, GSAP, and Nuxt 4.
             </p>
           </div>
 
@@ -58,7 +58,7 @@ const backendSkills = [
               <div class="flex items-center gap-4">
                 <Icon :name="skill.icon" class="w-8 h-8 filter grayscale group-hover/item:grayscale-0 transition-all" />
                 <div>
-                  <div class="text-lg font-bold text-white/80 group-hover/item:text-white">
+                  <div class="md:text-lg font-semibold md:font-bold text-white/80 group-hover/item:text-white">
                     {{ skill.name }}
                   </div>
                   <div class="text-[10px] text-white/30 font-mono uppercase">
@@ -71,7 +71,7 @@ const backendSkills = [
           </div>
         </div>
 
-        <div class=" p-8 md:p-12 relative group border-t lg:border-t-0 lg:border-l border-white/10">
+        <div class="px-3 py-6 md:p-8 md:p-12 relative group border-t lg:border-t-0 lg:border-l border-white/10">
           <div class="absolute top-0 right-0 p-8 opacity-5 pointer-events-none font-mono text-[10px] hidden md:block">
             <pre>
 async function init() {
@@ -83,11 +83,11 @@ async function init() {
 
           <div class="mb-12 lg:text-right">
             <span class="text-blue-400 font-mono tracking-[0.3em] uppercase text-xs">Side B</span>
-            <h3 class="text-5xl font-black text-white mt-2 italic tracking-tighter uppercase">
+            <h3 class="text-3xl font-semibold md:text-5xl font-black text-white mt-2 md:italic md:tracking-tighter uppercase">
               Backend
             </h3>
             <p class="text-white/40 mt-4 max-w-sm lg:ml-auto text-sm">
-              Building robust systems using Node.js and scalable database architectures[cite: 42, 44].
+              Building robust systems using Node.js and <br> scalable database architectures.
             </p>
           </div>
 
@@ -99,7 +99,7 @@ async function init() {
               <div class="flex items-center gap-4 flex-row-reverse">
                 <Icon :name="skill.icon" class="w-8 h-8 filter grayscale group-hover/item:grayscale-0 transition-all" />
                 <div class="text-right">
-                  <div class="text-lg font-bold text-white/80 group-hover/item:text-white">
+                  <div class="md:text-lg font-semibold md:font-bold text-white/80 group-hover/item:text-white">
                     {{ skill.name }}
                   </div>
                   <div class="text-[10px] text-white/30 font-mono uppercase">

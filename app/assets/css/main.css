@@ -6,6 +6,11 @@
   --color-color: #00DC82;
 }
 
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 section {
   scroll-margin-top: 90px;
 }

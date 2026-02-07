@@ -12,6 +12,7 @@ const navigation = computed<NavItem[]>(() => [
   { name: 'Experience', path: '/experience', id: 'experience' },
   { name: 'Projects', path: '/projects', id: 'projects' },
   { name: 'Education', path: '/education', id: 'education' },
+  { name: 'Contact', path: '/contact', id: 'contact' },
 ])
 
 const isActive = (path: string) => {
@@ -92,14 +93,14 @@ const mobileMenuOpen = ref(false)
         >
           {{ nav.name }}
           <Icon name="lucide:arrow-up-right" class="opacity-0 group-hover:opacity-100 transition-opacity" />
-        </button>
+        </button
 
         <hr class="border-white/10 my-4" />
 
         <!-- Contact button fixed -->
         <button
           @click="scrollToSection('contact'); mobileMenuOpen = false"
-          class="w-full py-4 bg-myColor text-black font-bold rounded-2xl">
+          class="w-full py-4 bg-color text-black font-bold rounded-2xl">
           Contact Me
         </button>
 

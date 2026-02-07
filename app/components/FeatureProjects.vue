@@ -26,10 +26,10 @@ const projects = [
 </script>
 
 <template>
-  <section id="feature-project" class="py-10 px-6 bg-primary">
-    <div class="max-w-7xl mx-auto space-y-32">
+  <section id="feature-project" class="py-5 md:py-10 px-3 md:px-6 bg-primary">
+    <div class="max-w-7xl mx-auto space-y-16 md:space-y-32">
       <div>
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div class="flex flex-col md:flex-row justify-between mb-16 gap-5 md:gap-8">
           <div class="space-y-4">
             <div class="flex items-center gap-2">
               <div class="w-8 h-[1px] bg-color" />
@@ -45,8 +45,8 @@ const projects = [
           </a>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div v-for="(project, index) in projects" :key="index" class="group relative aspect-[4/5] rounded-[40px] overflow-hidden border border-white/10 bg-white/5">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-8">
+          <div v-for="(project, index) in projects" :key="index" class="group relative aspect-[4/5] rounded-3xl md:rounded-[40px] overflow-hidden border border-white/10 bg-white/5">
             <img :src="project.image" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 opacity-50 group-hover:opacity-100">
             <div class="absolute inset-0 bg-gradient-to-t from-[#030712] via-[#030712]/40 to-transparent" />
 

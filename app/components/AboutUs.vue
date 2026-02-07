@@ -1,7 +1,7 @@
 <template>
-  <section id="about" class="py-20 px-6 bg-primary border-t border-white/5 relative overflow-hidden">
+  <section id="about" class="py-10 md:py-20 px-3 md:px-6 bg-primary border-t border-white/5 relative overflow-hidden">
     <div class="max-w-7xl mx-auto">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-24 gap-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-24 gap-8">
         <div class="space-y-2">
           <p class="text-color font-mono text-xs uppercase tracking-[0.5em]">
             Identity / Profile
@@ -19,18 +19,18 @@
         </div>
       </div>
 
-      <div class="grid lg:grid-cols-12 gap-16">
-        <div class="lg:col-span-8 space-y-12">
-          <div class="space-y-8">
+      <div class="grid lg:grid-cols-12 gap-10 md:gap-16">
+        <div class="md:col-span-8 space-y-8">
+          <div class="md:space-y-8 ">
             <h3 class="text-color font-mono text-xs uppercase tracking-widest border-b border-white/10 pb-4 inline-block">
               // Professional Summary
             </h3>
-            <p class="text-3xl md:text-5xl font-light text-white leading-tight tracking-tight">
+            <p class="text-3xl md:text-5xl mt-2 md:mt-0 font-light text-white leading-tight tracking-tight">
               A Software Engineer dedicated to building <span class="italic text-color">stable backend architectures</span> and <span class="text-white font-medium">high-fidelity</span> frontend experiences.
             </p>
           </div>
 
-          <div class="grid md:grid-cols-2 gap-12 text-white/50 text-sm leading-relaxed font-mono">
+          <div class="grid md:grid-cols-2 gap-6 md:gap-12 text-white/50 text-sm leading-relaxed font-mono">
             <p>
               Based in Pakistan, I specialize in the <span class="text-white">Nuxt 4</span> ecosystem, bridging the gap between complex server logic and seamless user interaction. My tenure at <span class="text-white">NGEN Peshawar</span> solidified my ability to deliver production-grade code under demanding conditions.
             </p>
@@ -40,7 +40,7 @@
           </div>
         </div>
 
-        <div class="lg:col-span-4 border-l border-white/10 pl-12 space-y-12">
+        <div class="lg:col-span-4 border md:border-none md:border-l border-white/10 p-3 md:p-0 rounded-md md:pl-12 space-y-5 md:space-y-12">
           <div class="space-y-6">
             <h4 class="text-white/20 font-mono text-[10px] uppercase tracking-[0.4em]">
               Academic Foundation

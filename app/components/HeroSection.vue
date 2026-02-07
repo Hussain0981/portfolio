@@ -1,5 +1,5 @@
 <template>
-  <section id="home" class="relative min-h-screen bg-primary flex items-center justify-center overflow-hidden font-sans">
+  <section id="home" class="relative min-h-screen bg-primary py-10 md:py-0 flex items-center justify-center overflow-hidden font-sans">
     <div
       class="absolute inset-0 z-0 opacity-20"
       style="background-image: linear-gradient(#ffffff05 1px, transparent 1px), linear-gradient(90deg, #ffffff05 1px, transparent 1px); background-size: 50px 50px;"
@@ -8,7 +8,7 @@
     <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-color/10 rounded-full blur-[120px] animate-pulse" />
     <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-500/10 rounded-full blur-[120px]" />
 
-    <div class="max-w-[1500px] mx-auto w-full px-6 lg:px-12 relative z-10">
+    <div class="max-w-[1500px] mx-auto w-full px-2 md:px-6 lg:px-12 relative z-10">
       <div class="grid lg:grid-cols-12 gap-4 items-center">
         <div class="lg:col-span-5 order-2 lg:order-1 space-y-8">
           <div class="space-y-4">
@@ -46,7 +46,7 @@
         <div class="lg:col-span-4 order-1 lg:order-2 flex justify-center relative py-12 lg:py-0">
           <div class="absolute inset-0 border border-white/5 rounded-full scale-125 animate-[spin_60s_linear_infinite]" />
 
-          <div class="relative w-72 h-[450px] md:w-80 md:h-[550px] bg-secondary rounded-[60px] overflow-hidden border border-white/10 shadow-2xl group">
+          <div class="relative w-60 rounded-2xl mt-16 md:mt-0 md:w-72 md:h-[450px] md:w-80 md:h-[550px] bg-secondary md:rounded-[60px] overflow-hidden border border-white/10 shadow-2xl group">
             <img
               src="/hero-image.png"
               alt="Hussain Ullah"
@@ -55,7 +55,7 @@
             <div class="absolute inset-0 bg-linear-to-t from-primary via-transparent to-transparent opacity-60" />
           </div>
 
-          <div class="absolute top-10 -right-10 md:-right-20 p-4 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl animate-float">
+          <div class="absolute top-20 right-0 md:-right-20 p-4 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl animate-float">
             <Icon name="logos:nuxt-icon" class="w-8 h-8 mb-2" />
             <p class="text-[10px] font-mono text-white/40 uppercase">
               Framework
@@ -65,7 +65,7 @@
             </p>
           </div>
 
-          <div class="absolute bottom-20 -left-10 md:-left-20 p-4 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl animate-float-delayed">
+          <div class="absolute bottom-20 left-0 md:-left-20 p-4 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl animate-float-delayed">
             <div class="text-color font-black text-2xl">
               2+
             </div>

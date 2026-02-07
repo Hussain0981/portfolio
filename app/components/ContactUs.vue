@@ -1,12 +1,15 @@
 <template>
-  <section id="contact" class="py-14 bg-primary text-white selection:bg-color selection:text-black">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="flex items-center gap-4 mb-20 opacity-30">
-        <div class="h-px w-12 bg-white" />
-        <span class="font-mono text-[10px] uppercase tracking-[0.5em]">04 // Connection</span>
+  <section id="contact" class=" py-5 md:py-14 bg-primary text-white selection:bg-color selection:text-black">
+    <div class="max-w-7xl mx-auto p-3 md:p-6">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="relative flex h-3 w-3">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-color opacity-75" />
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-color" />
+        </span>
+        <span class="text-color font-mono text-[10px] uppercase tracking-[0.4em]">Section / 04 Connection</span>
       </div>
 
-      <div class="grid lg:grid-cols-12 gap-16">
+      <div class="grid lg:grid-cols-12 gap-8 md:gap-16">
         <div class="lg:col-span-7">
           <h2 class="text-6xl md:text-[120px] font-black uppercase tracking-tighter leading-[0.85] italic mb-12">
             Let's <br>
