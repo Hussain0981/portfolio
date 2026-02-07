@@ -5,7 +5,7 @@ export const useSmoothScroll = () => {
     const el = document.getElementById(id)
     if (!el) return
 
-    const headerOffset = 105 // 
+    const headerOffset = 100 // 
 
     const y =
       el.getBoundingClientRect().top +

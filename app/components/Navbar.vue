@@ -50,8 +50,9 @@ const mobileMenuOpen = ref(false)
           @click="scrollToSection(nav.id!)"
           class="px-4 py-1.5 rounded-lg text-sm font-medium transition-all duration-300 relative overflow-hidden"
           :class="isActive(nav.path) ? 'text-black ' : 'text-white/70 hover:text-white hover:bg-white/5'"
+          
         >
-          <span class="relative z-10">{{ nav.name }}</span>
+          <span class="relative z-10" >{{ nav.name }}</span>
           <transition name="fade">
             <span v-if="isActive(nav.path)" class="absolute inset-0 bg-color text-black rounded-lg z-0"></span>
           </transition>

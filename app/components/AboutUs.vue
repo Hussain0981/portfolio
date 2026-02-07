@@ -1,3 +1,12 @@
+<script lang="ts" setup>
+function downloadFile() {
+  const link = document.createElement('a')
+  link.href = '/hussain_cv.pdf'
+  link.download = 'hussain_cv.pdf'
+  link.click()
+}
+</script>
+
 <template>
   <section id="about" class="py-10 md:py-20 px-3 md:px-6 bg-primary border-t border-white/5 relative overflow-hidden">
     <div class="max-w-7xl mx-auto">
@@ -80,7 +89,7 @@
           </div>
 
           <div class="pt-8">
-            <button class="w-full py-4 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all duration-500">
+            <button class="w-full py-4 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-[0.3em] hover:bg-white hover:text-black transition-all duration-500" @click="downloadFile">
               Download CV.PDF
             </button>
           </div>

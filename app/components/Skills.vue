@@ -3,17 +3,19 @@
  * Data integrated from your professional profile [cite: 34-45]
  */
 const frontendSkills = [
-  { name: 'Vue / Nuxt 4', level: 'Expert', tech: 'Composition API, SSR', icon: 'logos:nuxt-icon' },
-  { name: 'TypeScript', level: 'Core', tech: 'Typed Logic', icon: 'logos:typescript-icon' },
-  { name: 'GSAP / Three.js', level: 'Creative', tech: '3D & Motion', icon: 'logos:gsap-icon' },
-  { name: 'Tailwind / UnoCSS', level: 'Styling', tech: 'Utility-first', icon: 'logos:tailwindcss-icon' },
+  { name: 'Vue / Nuxt ', level: 'Expert', tech: 'Composition API, SSR', icon: 'logos:nuxt-icon' },
+  { name: 'TypeScript / Javascript', level: 'Core', tech: 'Typed Logic', icon: 'logos:typescript-icon' },
+  { name: 'GSAP / Three.js', level: 'Creative', tech: '3D & Motion', icon: 'logos:threejs' },
+  { name: 'CSS / Tailwind / UnoCSS', level: 'Styling', tech: 'Utility-first', icon: 'logos:tailwindcss-icon' },
+  { name: 'Nuxt Modules / Vue & Js Libraries', level: 'Advance', tech: 'Web app UI & logic', icon: 'logos:vueuse' },
 ]
 
 const backendSkills = [
-  { name: 'Node / Express', type: 'Runtime', tech: 'Server Logic', icon: 'logos:nodejs-icon' },
-  { name: 'Postgres / MySQL', type: 'SQL', tech: 'Relational DB', icon: 'logos:postgresql' },
-  { name: 'MongoDB', type: 'NoSQL', tech: 'Document Store', icon: 'logos:mongodb-icon' },
+  { name: 'Node / Express / Nitro H3', type: 'Runtime', tech: 'Server Logic', icon: 'logos:nodejs-icon' },
+  { name: 'PostgreSQL / MySQL', type: 'SQL', tech: 'Relational DB', icon: 'logos:postgresql' },
   { name: 'Prisma / Drizzle', type: 'ORM', tech: 'Type-safe Data', icon: 'logos:prisma' },
+  { name: 'MongoDB', type: 'NoSQL', tech: 'Document Store', icon: 'logos:mongodb-icon' },
+  { name: 'Mongoose', type: 'ODM', tech: 'Mongo DB ODM', icon: 'logos:mongodb-icon' },
 ]
 </script>
 
@@ -39,10 +41,10 @@ const backendSkills = [
       </div>
 
       <div class="grid lg:grid-cols-2 gap-px bg-white/10 border border-white/10 rounded-xl md:rounded-3xl overflow-hidden">
-        <div class="px-2 py-5 md:p-8 md:p-12 relative group">
+        <div class="px-2 py-5 md:p-12 relative group">
           <div class="mb-12">
             <span class="text-color font-mono tracking-[0.3em] uppercase text-xs">Side A</span>
-            <h3 class="text-3xl font-semibold md:text-5xl font-black text-white mt-2 md:italic md:tracking-tighter uppercase">
+            <h3 class="text-3xl font-semibold md:font-black md:text-5xl text-white mt-2 md:italic md:tracking-tighter uppercase">
               Frontend
             </h3>
             <p class="text-white/40 mt-4 max-w-sm text-sm">
@@ -53,7 +55,7 @@ const backendSkills = [
           <div class="space-y-4 b">
             <div
               v-for="skill in frontendSkills" :key="skill.name"
-              class="flex items-center justify-between p-5 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-color/50 hover:bg-white/[0.05] transition-all duration-300 group/item"
+              class="flex items-center justify-between p-5 rounded-2xl bg-white/2 border border-white/5 hover:border-color/50 hover:bg-white/5 transition-all duration-300 group/item"
             >
               <div class="flex items-center gap-4">
                 <Icon :name="skill.icon" class="w-8 h-8 filter grayscale group-hover/item:grayscale-0 transition-all" />
@@ -71,7 +73,7 @@ const backendSkills = [
           </div>
         </div>
 
-        <div class="px-3 py-6 md:p-8 md:p-12 relative group border-t lg:border-t-0 lg:border-l border-white/10">
+        <div class="px-3 py-6 md:p-12 relative group border-t lg:border-t-0 lg:border-l border-white/10">
           <div class="absolute top-0 right-0 p-8 opacity-5 pointer-events-none font-mono text-[10px] hidden md:block">
             <pre>
 async function init() {
@@ -83,7 +85,7 @@ async function init() {
 
           <div class="mb-12 lg:text-right">
             <span class="text-blue-400 font-mono tracking-[0.3em] uppercase text-xs">Side B</span>
-            <h3 class="text-3xl font-semibold md:text-5xl font-black text-white mt-2 md:italic md:tracking-tighter uppercase">
+            <h3 class="text-3xl md:text-5xl font-semibold  md:font-black text-white mt-2 md:italic md:tracking-tighter uppercase">
               Backend
             </h3>
             <p class="text-white/40 mt-4 max-w-sm lg:ml-auto text-sm">
@@ -94,7 +96,7 @@ async function init() {
           <div class="space-y-4">
             <div
               v-for="skill in backendSkills" :key="skill.name"
-              class="flex items-center justify-between p-5 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-blue-500/50 hover:bg-white/[0.05] transition-all duration-300 flex-row-reverse group/item"
+              class="flex items-center justify-between p-5 rounded-2xl bg-white/2 border border-white/5 hover:border-blue-500/50 hover:bg-white/5 transition-all duration-300 flex-row-reverse group/item"
             >
               <div class="flex items-center gap-4 flex-row-reverse">
                 <Icon :name="skill.icon" class="w-8 h-8 filter grayscale group-hover/item:grayscale-0 transition-all" />

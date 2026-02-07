@@ -1,3 +1,9 @@
+<script lang="ts" setup>
+import { useSmoothScroll } from '~/composables/useScroll'
+
+const { scrollToSection } = useSmoothScroll()
+</script>
+
 <template>
   <section id="home" class="relative min-h-screen bg-primary py-10 md:py-0 flex items-center justify-center overflow-hidden font-sans">
     <div
@@ -31,22 +37,22 @@
           </div>
 
           <div class="flex flex-wrap items-center gap-6">
-            <button class="group relative px-8 py-4 bg-color text-gray-700 hover:text-black font-black uppercase text-xs tracking-widest rounded-full">
+            <button class="group relative px-8 py-4 bg-color text-gray-700 hover:text-black font-black uppercase text-xs tracking-widest rounded-full" @click="scrollToSection('contact')">
               Start a Project
               <div class="absolute inset-0 rounded-full bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-500" />
             </button>
 
-            <NuxtLink to="/projects" class="group flex items-center gap-3 text-white/40 hover:text-white transition-all">
+            <button class="group flex items-center gap-3 text-white/40 hover:text-white transition-all" @click="scrollToSection('projects')">
               <span class="text-xs font-bold uppercase tracking-widest">View Archives</span>
               <div class="w-8 h-px bg-white/20 group-hover:w-12 group-hover:bg-color transition-all" />
-            </NuxtLink>
+            </button>
           </div>
         </div>
 
         <div class="lg:col-span-4 order-1 lg:order-2 flex justify-center relative py-12 lg:py-0">
           <div class="absolute inset-0 border border-white/5 rounded-full scale-125 animate-[spin_60s_linear_infinite]" />
 
-          <div class="relative w-60 rounded-2xl mt-16 md:mt-0 md:w-72 md:h-[450px] md:w-80 md:h-[550px] bg-secondary md:rounded-[60px] overflow-hidden border border-white/10 shadow-2xl group">
+          <div class="relative w-60 rounded-2xl mt-16 md:mt-0 md:w-98 bg-secondary md:rounded-[60px] overflow-hidden border border-white/10 shadow-2xl group">
             <img
               src="/hero-image.png"
               alt="Hussain Ullah"
